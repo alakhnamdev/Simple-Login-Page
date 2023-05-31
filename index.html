@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div id="main">
+            <form action="">
+        <div id="seg1"><center><img src="user.png" alt=""></center></div>
+        <div id="seg2">
+                <div class="txt">User Name</div><input placeholder="username" id="un" type="text" class="ip">
+                <div class="txt">Password</div><input placeholder="Password" id="ps" type="text" class="ip">
+        </div>
+        <div id="seg4"></div>
+        <div id="seg3">
+            </form>
+            <center>
+            <button id="btn" onclick="check()">Log In</button>
+        </center>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function check(){
+        var uname = "alakh";
+        var pass = "foundation";
+        var un = document.getElementById("un").value;
+        var ps = document.getElementById("ps").value;
+        if(un==uname && pass==ps){
+            document.write("logged in");
+        }
+        else{
+            alert("incorrect password");
+            // document.getElementById("seg4").innerHTML = "incorrect username or password";
+        }
+    }
+</script>
+</html>
